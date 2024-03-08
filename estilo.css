@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.contenedorHead {
+    display: inline-flex;
+    width: 100%;
+    max-width: 1000px;
+    
+
+}
+
+header {
+
+    background-color: black;
+    color:white;
+
+}
+
+.academia {
+   position: absolute;
+    right: 1%;
+    top: 4%;
+   
+    
+}
+
+.ourense {
+   
+    position: absolute;
+    left: 7%;
+    top: 4%;
+}
+
+
+.logo {
+    position: relative;
+    border-radius: 50%;
+    width: 34%;
+    
+}
+
+/*-----------estructura del navegador--------------------------------------------*/
+.navegador {
+    background-color:black;
+    color: white;
+    height: 76px;
+    
+    
+}
+
+nav {
+    text-align: center;
+    padding: 30px 50px 0 0;
+    border: 3px solid black;
+    
+    
+    
+}
+
+nav > a 
+{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 31px;
+    font-size: 21px;
+    border: 10px solid black;
+    border-radius: 10px;
+    box-shadow: 5px  5px 10px  #d60e0e93;
+}
+
+nav > a:hover {
+    background-color: black;
+    color: red;
+}
+
+/*--------------section de la imagen de medio-------------------------------------------------------------------------------*/
+.imagen {
+    
+    background: black;
+    width: 100%;
+    height: 500px;
+    
+    background-image: url(data:image/jpeg;base64,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);
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    background-size: 350px;
+    background-position: center center;
+    background-attachment: fixed; /*-- es para que la imagem se quede estatica cuando bajas con el cursor-*/
+    
+    /*- para dar filtros a una imagen----la propiedad filter---------------------------*/
+    filter: contrast(4);
+    
+    box-shadow: 5px 5px 10px #d60e0e93;
+
+
+}
+
+/*-----------footer.------------------------*/
+footer {
+    min-height: 250px;
+    background-color: black;
+    color:#d41010d3;
+}
+.titulo-final {
+    position: relative;
+    top: 110px;
+}
+
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*
+/*------------------ESTA ES LA SEGUNDA PAGINA-----------------------------------------------------------------------------------------*/
+
+.contenedor {
+    background-color: antiquewhite;
+    height: 499px;
+    display: inline-flex;
+    
+}
+
+.fotoPerfil {
+    border: 3px solid white; /*aquui esta en borde d color rojo para saber como esta ubicado la foto*/
+    display: inline-block;
+    
+}
+.darwin {
+    display: inline-block;
+    position:absolute;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    /*border: 3px solid blue;*/
+    margin-left: 7%;
+    margin-bottom: 6%;
+}
+
+.datos h2 {
+    display: inline-block;
+    position: absolute;
+    text-align: center;
+    /*border: 3px solid red;*/
+    margin-top: 5%;
+    margin-left: 39%;
+    font-size: 50px;
+}
+
+.datos ul {
+    list-style-type: none;
+    /*border: 3px solid red;*/
+    display: inline-block;
+    position: absolute;
+    margin-top: 14%;
+    margin-left: 30%;
+    font-size: 23px;
+    
+}
+.datos li {
+    border: 3px solid black;
+    padding: 10px 10px;
+    margin: 10px 10px;
+    border-radius: 20px;
+
+}
+
+
+/*-----------esta es la pagina 3--------------------------------------------------------------------------------------*/
+/*-----------esta es la pagina 3--------------------------------------------------------------------------------------*/
+/*-----------esta es la pagina 3--------------------------------------------------------------------------------------*/
+/*-----------esta es la pagina 3--------------------------------------------------------------------------------------*/
+/*-----------esta es la pagina 3--------------------------------------------------------------------------------------*/
+
+.sobre_mi h2{
+    
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 3%;
+}
+
+.sobre_mi p {
+    text-align: center;
+    font-size: 20px;
+
+    
+}
+
+.parrafo {
+    text-align: justify;
+    font-size: 30px;
+    
+}
+.parrafo p {
+    font-size: 18px;
+    padding: 1% 30%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
